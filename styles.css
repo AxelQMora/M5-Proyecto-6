@@ -1,0 +1,21 @@
+body  {
+    /*background-color: #0a0714;*/
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+#form-container {
+    width: 35vw;
+    height: 45vh;
+    background-color: #091017;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+footer {
+    margin-top: 10vh;
+}
+
