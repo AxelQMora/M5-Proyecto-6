@@ -3,6 +3,7 @@ body  {
     display: flex;
     flex-direction: column;
     height: 100vh;
+    width: 100vw;
     justify-content: center;
     align-items: center;
 }
@@ -17,5 +18,23 @@ body  {
 
 footer {
     margin-top: 10vh;
+}
+
+#alertMessage {
+    width: 30vw;
+    height: 40vh;
+    z-index: 3;
+    position: fixed;
+    top: 25vh;
+    display: none;
+}
+
+#warningsList {
+    list-style-type: circle;;
+}
+
+#successfulMessage {
+    margin-top: 20px;
+    display: none;
 }
 

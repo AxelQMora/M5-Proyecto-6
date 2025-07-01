@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>M5-Proyecto-6</title>
     <link rel="stylesheet" href="./styles.css">
-    <script src="./main.js"></script>
+    <script type="module" src="./main.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
@@ -34,14 +34,32 @@
         </div>
 
         <div class="d-grid gap-2">
-            <button class="btn btn-primary" type="button">Sign up</button>
+            <button class="btn btn-primary" type="button" id="submit">Sign up</button>
         </div>
 
 
     </section>
 
+    <div class="alert alert-success" role="alert" id="successfulMessage">
+        <h4 class="alert-heading">Welcome!</h4>
+        <p>You have successfully signed up into our platform</p>
+        <hr>
+        <p class="mb-0">This is a simulation for DEV.F :)</p>
+    </div>
+
+
+    <div class="alert alert-warning alert-dismissible fade show" role="alert" id="alertMessage">
+        <strong>Please fix the following issues:</strong>
+        <ul id="warningsList">
+
+        </ul>
+        <button type="button" class="btn-close" id="closeWarning" aria-label="Close"></button>
+    </div>
+
     <footer>Axel Daniel Quintana Mora</footer>
 
 </body>
+
+
 
 </html>
