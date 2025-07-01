@@ -22,6 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
         e.preventDefault();
         alertMessage.style.display = 'none';
         warningsList.innerHTML = '';
+        submit.disabled = false;
     });
 
     submit.addEventListener('click', (e) => {
@@ -45,6 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 newListItem.textContent = issue.message;
                 warningsList.appendChild(newListItem);
                 alertMessage.style.display = 'block';
+                submit.disabled = true;
             })
         }
         else {
